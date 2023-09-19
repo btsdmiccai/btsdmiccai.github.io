@@ -123,6 +123,35 @@ margin: 0;
 font-size: 1.4em;
 }
 
+.smallbox {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+@media only screen and (max-width: 750px) {
+    .smallbox {
+      flex-direction: column;
+    }
+}
+
+.smallbox img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.smallbox p {
+width: 50%;
+margin: 0;
+font-size: 1.1em;
+}
+
 /* Table */
 table {
     width: 100%;
